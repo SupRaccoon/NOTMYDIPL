@@ -1,0 +1,272 @@
+\documentclass[master,14pt,subf,href,colorlinks=true]{disser}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{multicol}
+
+\usepackage[a4paper, mag=1000, includefoot, left=3cm, right=2cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{epstopdf}
+%\usepackage[options]{natbib}
+
+
+%\usepackage[%
+%backend=biber,% движок
+%bibencoding=utf8,% кодировка bib файла
+%sorting=none,% настройка сортировки списка литературы
+%style=gost-numeric,% стиль цитирования и библиографии (по ГОСТ)
+%language=autobib,% получение языка из babel/polyglossia, default: autobib % если ставить autocite или auto, то цитаты в тексте с указанием страницы, получат указание страницы на языке оригинала
+%autolang=other,% многоязычная библиография
+%clearlang=true,% внутренний сброс поля language, если он совпадает с языком из babel/polyglossia
+%defernumbers=true,% нумерация проставляется после двух компиляций, зато позволяет выцеплять библиографию по ключевым словам и нумеровать не из большего списка
+%sortcites=true,% сортировать номера затекстовых ссылок при цитировании (если в квадратных скобках несколько ссылок, то отображаться будут отсортированно, а не абы как)
+%doi=false,% Показывать или нет ссылки на DOI
+%isbn=false,% Показывать или нет ISBN, ISSN, ISRN
+%]{biblatex}
+
+%\addbibresource{lavrinenko.bib}
+%\addbibresource{MBT18Lavrinenko.bib}
+%\addbibresource{Elbrus17.bib}
+\hyphenpenalty=1000
+
+% Номера страниц сверху и по центру
+%\def\headfont{\small}
+%\pagestyle{headcenter}
+%\pagestyle{plain} % нумерация вкл
+
+% Точка с запятой в качестве разделителя между номерами цитирований
+%\setcitestyle{semicolon}
+
+% Использовать полужирное начертание для векторов
+\let\vec=\mathbf
+
+% Включать подсекции в оглавление
+\setcounter{tocdepth}{2}
+
+\graphicspath{{figure/}}
+
+\pagestyle{headcenter}
+%\pagestyle{plain} 
+\begin{document}
+\include{0-title}
+
+%Сокращения
+\include{0-name}
+
+%\chapter*{Введение}
+\include{1-intro}
+
+%литобзор
+\include{2-literature}
+%\chapter{Методы атомистического моделирования}
+\include{3-structure}
+
+
+%\chapter*{Выводы}
+\include{6-conclusion}
+\begin{thebibliography}{44}
+	\bibitem{Zolotukhin}
+	Золотухин И. В., Калинин Ю. Е. Аморфные металлические сплавы //Успехи физических наук. – 1990. – Т. 160. – №. 9. – С. 75-110.
+	
+	\bibitem{Egami}
+	Egami T., Srolovitz D. Local structural fluctuations in amorphous and liquid metals: a simple theory of the glass transition //Journal of Physics F: Metal Physics. – 1982. – Т. 12. – №. 10. – С. 2141.
+	
+	\bibitem{Gaskell}
+	Gaskell P. H. Local and medium range structures in amorphous alloys //Journal of Non-Crystalline Solids. – 1985. – Т. 75. – №. 1-3. – С. 329-346.
+	
+	\bibitem{Waseda}
+	Waseda Y., Chen H. S. A structural study of metallic glasses containing boron (Fe-B, Co-B, and Ni-B) //Physica status solidi (a). – 1978. – Т. 49. – №. 1. – С. 387-392.
+	
+	\bibitem{Pisarev}
+	Кирова Е. М., Норман Г. Э., Писарев В. В. Моделирование стеклования тонкого слоя расплава алюминия при сверхбыстром охлаждении в изобарических условиях //Письма в Журнал экспериментальной и теоретической физики. – 2019. – Т. 110. – №. 5. – С. 343-347.
+	
+	\bibitem{Liu}
+	Liu X. J. et al. Metallic liquids and glasses: atomic order and global packing //Physical review letters. – 2010. – Т. 105. – №. 15. – С. 155501.
+	
+	\bibitem{Kolotova}
+	Колотова Л. Н., Норман Г. Э., Писарев В. В. Стеклование переохлажденного расплава алюминия: молекулярно-динамическое исследование //Журнал физической химии. – 2015. – Т. 89. – №. 5. – С. 796-800.
+	
+	\bibitem{Reddy}
+	Reddy K. V., Pal S. Evaluation of glass forming ability of Zr–Nb alloy systems through liquid fragility and Voronoi cluster analysis //Computational Materials Science. – 2019. – Т. 158. – С. 324-332.
+	
+	\bibitem{Sheng}
+	Sheng H. W. et al. Atomic packing and short-to-medium-range order in metallic glasses //Nature. – 2006. – Т. 439. – №. 7075. – С. 419-425.
+	
+	\bibitem{Hoare}
+	Hoare M. Stability and local order in simple amorphous packings //Annals of the New York Academy of Sciences. – 1976. – Т. 279. – №. 1. – С. 186-207.
+	
+	\bibitem{Wei}
+	Wei Y. D. et al. A comparative study on local atomic configurations characterized by cluster-type-index method and Voronoi polyhedron method //Computational Materials Science. – 2016. – Т. 123. – С. 214-223.
+	
+	\bibitem{Wakeda}
+	Wakeda M. et al. Relationship between local geometrical factors and mechanical properties for Cu–Zr amorphous alloys //Intermetallics. – 2007. – Т. 15. – №. 2. – С. 139-144.
+	
+	\bibitem{Xie}
+	Xie Z. C. et al. Evolution of icosahedral clusters during the rapid solidification of liquid TiAl alloy //Physica B: Condensed Matter. – 2014. – Т. 440. – С. 130-137.
+	
+	\bibitem{Liang}
+	Liang Y. C. et al. Influence of icosahedral order on the second peak splitting of pair distribution function for Mg70Zn30 metallic glass //Journal of alloys and compounds. – 2014. – Т. 597. – С. 269-274.
+	
+	\bibitem{Pan}
+	Pan S. P. et al. Origin of splitting of the second peak in the pair-distribution function for metallic glasses //Physical Review B. – 2011. – Т. 84. – №. 9. – С. 092201.
+	
+	\bibitem{Fukunaga}
+	Fukunaga T. et al. Voronoi analysis of the structure of Cu–Zr and Ni–Zr metallic glasses //Intermetallics. – 2006. – Т. 14. – №. 8-9. – С. 893-897.
+	
+	\bibitem{Evteev}
+	Евтеев А. В., Косилов А. Т., Левченко Е. В. Структурная модель стеклования чистых металлов //Письма в Журнал экспериментальной и теоретической физики. – 2002. – Т. 76. – №. 2. – С. 115-117.
+	
+	\bibitem{Gordeev}
+	Гордеев И. С., Стариков С. В., Сравнение различных методов атомистического моделирования для расчета температуры фазового перехода на примере Циркония// Журнал экспериментальной и теоретической физики. – 2019. – Т. 155. – №. 5. – С. 878-885.
+	
+	\bibitem{Nikulina}
+	Никулина А. В. Цирконий-ниобиевые сплавы для элементов активных зон реакторов с водой под давлением //Вопросы атомной науки и техники. Серия: Материаловедение и новые материалы. – 2005. – №. 1. – С. 190-190.
+	
+	\bibitem{Chernyaeva}
+	Черняева Т. П. и др. Особенности структуры закаленных сплавов Zr-Nb //Вопросы атомной науки и техники. – 2011.
+	
+	\bibitem{Derevyako}
+	Дерявко И. И. и др. Реакторная отработка стержневых карбидных твэлов ЯРД и ЯЭДУ //Вестник НЯЦ РК. – 2015. – С. 105.
+	
+	\bibitem{Smirnova}
+	Smirnova D. E., Starikov S. V. An interatomic potential for simulation of Zr-Nb system //Computational Materials Science. – 2017. – Т. 129. – С. 259-272.
+	
+	\bibitem{lin2013n}
+	Lin D. Y. et al. An n-body potential for a Zr–Nb system based on the embedded-atom method //Journal of Physics: Condensed Matter. – 2013. – Т. 25. – №. 10. – С. 105404.
+	
+	\bibitem{Klement}
+	Klement W., Willens R. H., Duwez P. O. L. Non-crystalline structure in solidified gold–silicon alloys //Nature. – 1960. – Т. 187. – №. 4740. – С. 869-870.
+	
+	\bibitem{Chaudhari}
+	Chaudhari P., Cuomo J. J., Gambino R. J. Amorphous metallic films for magneto‐optic applications //Applied Physics Letters. – 1973. – Т. 22. – №. 7. – С. 337-339.
+	
+	\bibitem{Chadhauri2.0}
+	Chaudhari P., Cuomo J. J., Gambino R. J. Amorphous metallic films for bubble domain applications //IBM Journal of Research and Development. – 1973. – Т. 17. – №. 1. – С. 66-68.
+	
+	\bibitem{Rhyne}
+	Rhyne J. J., Schelleng J. H., Koon N. C. Anomalous magnetization of amorphous Tb Fe 2, Gd Fe 2, and Y Fe 2 //Physical Review B. – 1974. – Т. 10. – №. 11. – С. 4672.
+	
+	\bibitem{Antonets}
+	Антонец И. В. и др. Особенности наноструктуры и удельной проводимости тонких пленок различных металлов //Журнал технической физики. – 2004. – Т. 74. – №. 3. – С. 24-27.
+	
+	\bibitem{Kalin}
+	Калин Б. А. Физическое материаловедение Том 5 Материалы с заданными свойствами //М.: МИФИ. – 2008.
+	
+	\bibitem{Glezer}
+	Глезер А., Шурыгина Н. Аморфно-нанокристаллические сплавы. – Litres, 2018.
+	
+	\bibitem{Abrosimova}
+	Абросимова Г. Е. Эволюция структуры аморфных сплавов //Успехи физических наук. – 2011. – Т. 181. – №. 12. – С. 1265-1281.
+	
+	\bibitem{Danilova}
+	Данилова И. И. и др. Производство аморфной и нанокристаллической ленты методом литья на одновалковой МНЛЗ //Вестник Южно-Уральского государственного университета. Серия: Металлургия. – 2008. – №. 9 (109).
+	
+	\bibitem{Davies}
+	Davies H. A., Aucote J., Hull J. B. Amorphous nickel produced by splat quenching //Nature Physical Science. – 1973. – Т. 246. – №. 149. – С. 13-14.
+	
+
+	
+	\bibitem{Sudzuki}
+	Судзуки К., Фудзимори Х., Хасимото К. Аморфные металлы. Металлургия. – 1987.
+	
+	\bibitem{Prokhorov}
+	Прохоров А. М. Физическая энциклопедия. – Рипол Классик, 1988. – Т. 1.
+	
+	\bibitem{Glezer2002}
+	Глезер А. М. Аморфные и нанокристаллические структуры: сходства, различия, взаимные переходы //Российский химический журнал. – 2002. – Т. 46. – №. 5. – С. 57-63.
+	
+	\bibitem{Chandler}
+	Chandler D. Introduction to modern statistical //Mechanics. Oxford University Press, Oxford, UK. – 1987.
+	
+		\bibitem{Levchenko}
+	Левченко Е. В. и др. Кластерная модель структурной организации аморфного железа //Физика металлов и металловедение. – 2010. – Т. 109. – №. 6. – С. 603-607.
+	
+	\bibitem{Pryadilschikov}
+	Прядильщиков А. Ю. и др. Молекулярно-динамическое изучение процесса стеклования бинарного сплава Ni 60 Ag 40 //Журнал экспериментальной и теоретической физики. – 2007. – Т. 132. – №. 6. – С. 1352-1358.	
+	
+	\bibitem{Medvedev}
+	Медведев Н. Н. Метод Вороного-Делоне в исследовании структуры некристаллических систем. – 2000.
+	
+	\bibitem{Dandar}
+	Дандар Д. С. и др. Релаксационные аспекты перехода жидкость—стекло //Успехи физических наук. – 2019. – Т. 189. – №. 2. – С. 113-133.
+	
+	\bibitem{tropin2015heat}
+	Tropin T. V. et al. Heat capacity measurements and modeling of polystyrene glass transition in a wide range of cooling rates //Journal of Non-Crystalline Solids. – 2015. – Т. 409. – С. 63-75.
+	
+	\bibitem{konstantinova2009kinematicheskaya}	
+	Константинова Н. Ю., Попель П. С., Ягодин Д. А. Кинематическая вязкость жидких сплавов медь-алюминий //Теплофизика высоких температур. – 2009. – Т. 47. – №. 3. – С. 354-359.
+	
+	\bibitem{Kuzmenko}
+	Кузьменко В. М. и др. Критические параметры аморфных металлических пленок (обзор) Введение //Украинский физический журнал. – 1976. – Т. 21. – №. 6. – С. 883.
+	
+	\bibitem{Wendt}
+	Wendt H. R., Abraham F. F. Empirical criterion for the glass transition region based on Monte Carlo simulations //Physical Review Letters. – 1978. – Т. 41. – №. 18. – С. 1244.
+	
+	\bibitem{Hamelberg}
+	Hamelberg D., Mongan J., McCammon J. A. Accelerated molecular dynamics: a promising and efficient simulation method for biomolecules //The Journal of chemical physics. – 2004. – Т. 120. – №. 24. – С. 11919-11929.
+	
+	\bibitem{Lennard}	
+	Lennard-Jones J. E. On the forces between atoms and ions //Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character. – 1925. – Т. 109. – №. 752. – С. 584-597.
+	
+	\bibitem{Daw}
+	Daw M. S., Baskes M. I. Embedded-atom method: Derivation and application to impurities, surfaces, and other defects in metals //Physical Review B. – 1984. – Т. 29. – №. 12. – С. 6443.
+	
+	\bibitem{mishin2005phase}
+	Mishin Y., Mehl M. J., Papaconstantopoulos D. A. Phase stability in the Fe–Ni system: Investigation by first-principles calculations and atomistic simulations //Acta materialia. – 2005. – Т. 53. – №. 15. – С. 4029-4041.
+	
+	\bibitem{Plimpton}
+	Plimpton S. Fast parallel algorithms for short-range molecular dynamics. – Sandia National Labs., Albuquerque, NM (United States), 1993. – №. SAND-91-1144.
+	
+	\bibitem{Gilyaev}
+	Янилкин А. В. и др. Применение суперкомпьютеров для молекулярно-динамического моделирования процессов в конденсированных средах //Вычислительные методы и программирование. – 2010. – Т. 11. – №. 1. – С. 111-116.
+	
+
+	
+
+	
+	\bibitem{Stukowski}
+	Stukowski A. Visualization and analysis of atomistic simulation data with OVITO–the Open Visualization Tool //Modelling and Simulation in Materials Science and Engineering. – 2009. – Т. 18. – №. 1. – С. 015012.
+	
+	\bibitem{Tretyakov}
+	Третьяков Ю. Д. и др. Неорганическая химия. Химия элементов: Учебник для вузов: в 2 книгах. Кн. 1. М //Химия. – 2001.
+	
+	\bibitem{Bondarev}
+	Бондарев А. В., Батаронов И. Л., Пашуева И. М. Статистико-геометрический анализ атомной структуры аморфных сплавов системы Re-Tb //Вестник Воронежского государственного технического университета. – 2017. – Т. 13. – №. 6.
+	
+	\bibitem{Zhang}
+	Zhang Y. et al. Experimental and molecular dynamics simulation study of structure of liquid and amorphous Ni62Nb38 alloy //The Journal of chemical physics. – 2016. – Т. 145. – №. 20. – С. 204505.
+	
+	\bibitem{Mendelev}
+	Wilson S. R., Mendelev M. I. Anisotropy of the solid–liquid interface properties of the Ni–Zr B33 phase from molecular dynamics simulation //Philosophical Magazine. – 2015. – Т. 95. – №. 2. – С. 224-241.
+	
+
+	
+	
+
+	
+	\bibitem{tropin2011dependence}
+	Tropin T. V., Schmelzer J. W. P., Schick C. On the dependence of the properties of glasses on cooling and heating rates: I. Entropy, entropy production, and glass transition temperature //Journal of Non-Crystalline Solids. – 2011. – Т. 357. – №. 4. – С. 1291-1302.
+	
+	\bibitem{aji2015kinetic}
+	Aji D. P. B., Johari G. P. Kinetic-freezing and unfreezing of local-region fluctuations in a glass structure observed by heat capacity hysteresis //The Journal of chemical physics. – 2015. – Т. 142. – №. 21. – С. 214501.
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+\end{thebibliography}
+%\printbibliography
+%\bibliographystyle{utf8gost705u}
+%\bibliography{lavrinenko,MBT18Lavrinenko,Elbrus17_LMV}
+
+\end{document}
